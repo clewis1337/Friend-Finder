@@ -7,8 +7,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 //Routes are handled in corresponding js files below
-require("./routes/apiRoutes")(app);
-require("./routes/htmlRoutes")(app);
+require("/routes/apiRoutes")(app);
+require("/routes/htmlRoutes")(app);
 
 
 app.listen(PORT, function() {
